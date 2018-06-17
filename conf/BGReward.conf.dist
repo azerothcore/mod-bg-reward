@@ -1,0 +1,82 @@
+[worldserver]
+
+#
+#    BG.Reward.Enable
+#        Description: Enable this module.
+#        	  Option: 1  - (Enable)
+#                     0  - (Disable)
+#
+
+BG.Reward.Enable = 1
+
+#
+#    BG.Reward.ItemID.WSG
+#        Description: Reward item on battlegroud Warsong Gulch.
+#        	  Option: 20558  - (Default)
+#                     
+#
+
+BG.Reward.ItemID.WSG = 20558
+
+#
+#    BG.Reward.ItemID.Arathi
+#        Description: Reward item on battlegroud Arathi Basin.
+#        	  Option: 20559  - (Default)
+#                     
+#
+
+BG.Reward.ItemID.Arathi = 20559
+
+#
+#    BG.Reward.ItemID.Alterac
+#        Description: Reward item on battlegroud Alterac Valley.
+#        	  Option: 20560  - (Default)
+#                     
+#
+
+BG.Reward.ItemID.Alterac = 20560
+
+#
+#    BG.Reward.ItemID.WSG
+#        Description: Reward item on battlegroud Isle of Conquest.
+#        	  Option: 47395  - (Default)
+#                     
+#
+
+BG.Reward.ItemID.Isle = 47395
+
+#
+#    BG.Reward.ItemID.Ancients
+#        Description: Reward item on battlegroud Strand of the Ancients.
+#        	  Option: 42425  - (Default)
+#                     
+#
+
+BG.Reward.ItemID.Ancients = 42425
+
+#
+#    BG.Reward.ItemID.Eye
+#        Description: Reward item on battlegroud Eye of the Storm.
+#        	  Option: 29024  - (Default)
+#                     
+#
+
+BG.Reward.ItemID.Eye = 29024
+
+#
+#    BG.Reward.WinnerTeam.Count
+#        Description: Reward count winner battlegroud team.
+#        	  Option: 3  - (Default)
+#                     
+#
+
+BG.Reward.WinnerTeam.Count = 3
+
+#
+#    BG.Reward.LoserTeam.Count
+#        Description: Reward count loser battlegroud team.
+#        	  Option: 1  - (Default)
+#                     
+#
+
+BG.Reward.LoserTeam.Count = 1
