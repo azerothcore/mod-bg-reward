@@ -22,8 +22,10 @@
 ### How to install
 1. Simply place the module under the `modules` folder of your AzerothCore source folder.
 2. Re-run cmake and launch a clean build of AzerothCore
-3. (Optional) Edit module configuration (BGReward.conf.dist)
-4. Done :)
+3. Done :)
+
+### Edit module configuration (optional)
+If you need to change the module configuration, go to your server configuration folder (where your worldserver or `worldserver.exe` is), copy `BGReward.conf.dist` to `BGReward.conf` and edit that new file.
 
 ### Usage
 - Win or lose BG
