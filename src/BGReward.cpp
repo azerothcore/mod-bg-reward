@@ -1,12 +1,12 @@
 #include "ScriptMgr.h"
 #include "Configuration/Config.h"
 
-class Kargatum_Reward_Battlegroud : public BGScript
+class Kargatum_Reward_Battleground : public BGScript
 {
 public:
-    Kargatum_Reward_Battlegroud() : BGScript("Kargatum_Reward_Battlegroud") {}
+    Kargatum_Reward_Battleground() : BGScript("Kargatum_Reward_Battleground") {}
 
-    void OnBattlegroudEndReward(Battleground* bg, Player* player, TeamId winnerTeamId) override
+    void OnBattlegroundEndReward(Battleground* bg, Player* player, TeamId winnerTeamId) override
     {
         if (!sConfigMgr->GetBoolDefault("BG.Reward.Enable", true))
             return;
@@ -58,10 +58,10 @@ public:
     }
 };
 
-class Kargatum_Reward_Battlegroud_World : public WorldScript
+class Kargatum_Reward_Battleground_World : public WorldScript
 {
 public:
-    Kargatum_Reward_Battlegroud_World() : WorldScript("Kargatum_Reward_Battlegroud_World") {}
+    Kargatum_Reward_Battleground_World() : WorldScript("Kargatum_Reward_Battleground_World") {}
 
     void OnAfterConfigLoad(bool /*reload*/) override
     {
@@ -97,6 +97,6 @@ public:
 
 void AddBGRewardScripts()
 {
-	new Kargatum_Reward_Battlegroud();
-    new Kargatum_Reward_Battlegroud_World();
+	new Kargatum_Reward_Battleground();
+    new Kargatum_Reward_Battleground_World();
 }
