@@ -10,6 +10,10 @@ public:
     {
         if (!sConfigMgr->GetBoolDefault("BG.Reward.Enable", true))
             return;
+            
+        // Not reward on end arena
+        if (bg->isArena())
+            return;
 
         // Reward ItemID
         uint32 ItemID_WSG       = sConfigMgr->GetIntDefault("BG.Reward.ItemID.WSG", 20558);
