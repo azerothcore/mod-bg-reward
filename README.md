@@ -17,7 +17,7 @@
 - BG.Reward.LoserTeam.Count - Reward count loser battlegroud team.
 
 ### BGReward Module currently requires:
-- Warning! For the module you need commit (https://github.com/azerothcore/azerothcore-wotlk/commit/049386b93662ad62ea6f779ed5832865ffbde242)
+- Warning! For the module you need commit (https://github.com/azerothcore/azerothcore-wotlk/commit/d4f785d7054e0fe908f71e921fe5d3a7aaedea1f)
 
 ### How to install
 1. Simply place the module under the `modules` folder of your AzerothCore source folder.
