@@ -1,4 +1,6 @@
 #include "ScriptMgr.h"
+#include "Player.h"
+#include "Battleground.h"
 #include "Configuration/Config.h"
 
 class Kargatum_Reward_Battleground : public BGScript
