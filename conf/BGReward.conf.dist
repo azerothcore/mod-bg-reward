@@ -1,82 +1,70 @@
+#
+# This file is part of the WarheadCore Project. See AUTHORS file for Copyright information
+#
+# This file is free software; as a special exception the author gives
+# unlimited permission to copy and/or distribute it, with or without
+# modifications, as long as this notice is preserved.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY, to the extent permitted by law; without even the
+# implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+# User has manually chosen to ignore the git-tests, so throw them a warning.
+# This is done EACH compile so they can be alerted about the consequences.
+#
+
+########################################
+# BGReward module configuration
+########################################
 [worldserver]
 
+###################################################################################################
 #
-#    BG.Reward.Enable
-#        Description: Enable this module.
-#        	  Option: 1  - (Enable)
-#                     0  - (Disable)
+#    BGReward.Enable
+#        Description: Enable battleground reward system.
+#        Default: 1
 #
-
-BG.Reward.Enable = 1
-
+#    BGReward.ItemID.WSG
+#        Description: Reward item on battleground Warsong Gulch.
+#        Default: 20558
 #
-#    BG.Reward.ItemID.WSG
-#        Description: Reward item on battlegroud Warsong Gulch.
-#        	  Option: 20558  - (Default)
-#                     
+#    BGReward.ItemID.Arathi 
+#        Description: Reward item on battleground Arathi Basin.
+#        Default: 20559
 #
-
-BG.Reward.ItemID.WSG = 20558
-
+#    BGReward.ItemID.Alterac
+#        Description: Reward item on battleground Alterac Valley.
+#        Default: 20560
 #
-#    BG.Reward.ItemID.Arathi
-#        Description: Reward item on battlegroud Arathi Basin.
-#        	  Option: 20559  - (Default)
-#                     
+#    BGReward.ItemID.Isle
+#        Description: Reward item on battleground Isle of Conquest.
+#        Default: 47395
 #
-
-BG.Reward.ItemID.Arathi = 20559
-
+#    BGReward.ItemID.Ancients
+#        Description: Reward item on battleground Strand of the Ancients.
+#        Default: 42425
 #
-#    BG.Reward.ItemID.Alterac
-#        Description: Reward item on battlegroud Alterac Valley.
-#        	  Option: 20560  - (Default)
-#                     
+#    BGReward.ItemID.Eye
+#        Description: Reward item on battleground Eye of the Storm.
+#        Default: 29024
 #
-
-BG.Reward.ItemID.Alterac = 20560
-
+#    BGReward.WinnerTeam.Count
+#        Description: Reward item count battleground winner team.
+#        Default: 3
 #
-#    BG.Reward.ItemID.WSG
-#        Description: Reward item on battlegroud Isle of Conquest.
-#        	  Option: 47395  - (Default)
-#                     
+#    BGReward.LoserTeam.Count
+#        Description: Reward item count battleground looser team.
+#        Default: 1
 #
 
-BG.Reward.ItemID.Isle = 47395
+BGReward.Enable = 1
 
-#
-#    BG.Reward.ItemID.Ancients
-#        Description: Reward item on battlegroud Strand of the Ancients.
-#        	  Option: 42425  - (Default)
-#                     
-#
+BGReward.ItemID.WSG = 20558
+BGReward.ItemID.Arathi = 20559
+BGReward.ItemID.Alterac = 20560
+BGReward.ItemID.Isle = 47395
+BGReward.ItemID.Ancients = 42425
+BGReward.ItemID.Eye = 29024
 
-BG.Reward.ItemID.Ancients = 42425
-
-#
-#    BG.Reward.ItemID.Eye
-#        Description: Reward item on battlegroud Eye of the Storm.
-#        	  Option: 29024  - (Default)
-#                     
-#
-
-BG.Reward.ItemID.Eye = 29024
-
-#
-#    BG.Reward.WinnerTeam.Count
-#        Description: Reward count winner battlegroud team.
-#        	  Option: 3  - (Default)
-#                     
-#
-
-BG.Reward.WinnerTeam.Count = 3
-
-#
-#    BG.Reward.LoserTeam.Count
-#        Description: Reward count loser battlegroud team.
-#        	  Option: 1  - (Default)
-#                     
-#
-
-BG.Reward.LoserTeam.Count = 1
+BGReward.WinnerTeam.Count = 3
+BGReward.LoserTeam.Count = 1
