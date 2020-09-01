@@ -19,12 +19,12 @@
 #define _BG_REWARD_LOADER_H_
 
 // From SC
-void AddSC_BGReward();
+void AddSC_BattlegroundsReward();
 
 // Add all
 void AddBGRewardScripts()
 {
-   AddSC_BGReward();
+    AddSC_BattlegroundsReward();
 }
 
 #endif /* _BG_REWARD_LOADER_H_ */

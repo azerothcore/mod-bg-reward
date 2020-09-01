@@ -19,52 +19,148 @@
 [worldserver]
 
 ###################################################################################################
+# BATTLEGROUND REWARD CONFIG
 #
-#    BGReward.Enable
-#        Description: Enable battleground reward system.
-#        Default: 1
 #
-#    BGReward.ItemID.WSG
-#        Description: Reward item on battleground Warsong Gulch.
-#        Default: 20558
+#    Battleground.Reward.Enable
+#       Description: Enable Battleground Reward.
 #
-#    BGReward.ItemID.Arathi 
-#        Description: Reward item on battleground Arathi Basin.
-#        Default: 20559
-#
-#    BGReward.ItemID.Alterac
-#        Description: Reward item on battleground Alterac Valley.
-#        Default: 20560
-#
-#    BGReward.ItemID.Isle
-#        Description: Reward item on battleground Isle of Conquest.
-#        Default: 47395
-#
-#    BGReward.ItemID.Ancients
-#        Description: Reward item on battleground Strand of the Ancients.
-#        Default: 42425
-#
-#    BGReward.ItemID.Eye
-#        Description: Reward item on battleground Eye of the Storm.
-#        Default: 29024
-#
-#    BGReward.WinnerTeam.Count
-#        Description: Reward item count battleground winner team.
-#        Default: 3
-#
-#    BGReward.LoserTeam.Count
-#        Description: Reward item count battleground looser team.
-#        Default: 1
+#       Default: 0  - (Disable)
+#        	     1  - (Enable)
 #
 
-BGReward.Enable = 1
+Battleground.Reward.Enable = 0
 
-BGReward.ItemID.WSG = 20558
-BGReward.ItemID.Arathi = 20559
-BGReward.ItemID.Alterac = 20560
-BGReward.ItemID.Isle = 47395
-BGReward.ItemID.Ancients = 42425
-BGReward.ItemID.Eye = 29024
+#
+#    Battleground.Reward.WinnerTeam.Count
+#       Description: Reward count winner Battleground team.
+#
+#       Default: 2
+#
 
-BGReward.WinnerTeam.Count = 3
-BGReward.LoserTeam.Count = 1
+Battleground.Reward.WinnerTeam.Count = 2
+
+#
+#    Battleground.Reward.LoserTeam.Count
+#        Description: Reward count loser Battleground team.
+#        	  Default: 1  - (Default)
+#
+
+Battleground.Reward.LoserTeam.Count = 1
+
+#
+#    Battleground.Reward.ItemID.WS
+#       Description: Reward item on Battleground Warsong Gulch.
+#
+#       Default: 20558
+#
+
+Battleground.Reward.ItemID.WS = 20558
+
+#
+#    Battleground.Reward.ItemID.AB
+#       Description: Reward item on Battleground Arathi Basin.
+#
+#       Default: 20559
+#
+
+Battleground.Reward.ItemID.AB = 20559
+
+#
+#    Battleground.Reward.ItemID.EY
+#       Description: Reward item on Battleground Eye of the Storm.
+#
+#       Default: 29024
+#
+
+Battleground.Reward.ItemID.EY = 29024
+
+#
+#    Battleground.Reward.ItemID.IC
+#       Description: Reward item on Battleground Isle of Conquest.
+#
+#       Default: 47395
+#
+
+Battleground.Reward.ItemID.IC = 47395
+
+#
+#    Battleground.Reward.ItemID.SA
+#       Description: Reward item on Battleground Strand of the Ancients.
+#
+#       Default: 42425
+#
+
+Battleground.Reward.ItemID.SA = 42425
+
+#
+#    Battleground.Reward.ItemID.AV
+#       Description: Reward item on Battleground Alterac Valley.
+#
+#       Default: 20560
+#
+
+Battleground.Reward.ItemID.AV = 20560
+
+#
+###################################################################################################
+
+###################################################################################################
+# ARENA REWARD CONFIG
+#
+#
+#    Arena.Reward.Enable
+#        Description: Enable Arena Reward.
+#
+#        Default: 0  - (Disable)
+#        	      1  - (Enable)
+#
+
+Arena.Reward.Enable = 0
+
+#
+#    Arena.Reward.WinnerTeam.Count
+#       Description: Reward count winner arena team.
+#
+#       Default: 2
+#
+
+Arena.Reward.WinnerTeam.Count = 2
+
+#
+#    Arena.Reward.LoserTeam.Count
+#        Description: Reward count loser arena team.
+#        	  Default: 1  - (Default)
+#
+
+Arena.Reward.LoserTeam.Count = 1
+
+#
+#    Arena.Reward.ItemID.2v2
+#       Description: Reward item on arena 2v2.
+#
+#       Default: 29434
+#
+
+Arena.Reward.ItemID.2v2 = 29434
+
+#
+#    Arena.Reward.ItemID.3v3
+#       Description: Reward item on arena 3v3.
+#
+#       Default: 29434
+#
+
+Arena.Reward.ItemID.3v3 = 29434
+
+#
+#    Arena.Reward.ItemID.5v5
+#       Description: Reward item on arena 5v5.
+#
+#       Default: 29434
+#
+
+Arena.Reward.ItemID.5v5 = 29434
+
+#
+###################################################################################################
