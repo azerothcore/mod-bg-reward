@@ -136,31 +136,58 @@ Arena.Reward.WinnerTeam.Count = 2
 Arena.Reward.LoserTeam.Count = 1
 
 #
-#    Arena.Reward.ItemID.2v2
+#    Arena.Reward.Winner.ItemID.2v2
 #       Description: Reward item on arena 2v2.
 #
 #       Default: 29434
 #
 
-Arena.Reward.ItemID.2v2 = 29434
+Arena.Reward.Winner.ItemID.2v2 = 29434
 
 #
-#    Arena.Reward.ItemID.3v3
+#    Arena.Reward.Loser.ItemID.2v2
+#       Description: Reward item on arena 2v2.
+#
+#       Default: 29434
+#
+
+Arena.Reward.Loser.ItemID.2v2 = 29434
+
+#
+#    Arena.Reward.Winner.ItemID.3v3
 #       Description: Reward item on arena 3v3.
 #
 #       Default: 29434
 #
 
-Arena.Reward.ItemID.3v3 = 29434
+Arena.Reward.Winner.ItemID.3v3 = 29434
 
 #
-#    Arena.Reward.ItemID.5v5
+#    Arena.Reward.Loser.ItemID.3v3
+#       Description: Reward item on arena 3v3.
+#
+#       Default: 29434
+#
+
+Arena.Reward.Loser.ItemID.3v3 = 29434
+
+#
+#    Arena.Reward.Winner.ItemID.5v5
 #       Description: Reward item on arena 5v5.
 #
 #       Default: 29434
 #
 
-Arena.Reward.ItemID.5v5 = 29434
+Arena.Reward.Winner.ItemID.5v5 = 29434
+
+#
+#    Arena.Reward.Loser.ItemID.5v5
+#       Description: Reward item on arena 5v5.
+#
+#       Default: 29434
+#
+
+Arena.Reward.Loser.ItemID.5v5 = 29434
 
 #
 ###################################################################################################
