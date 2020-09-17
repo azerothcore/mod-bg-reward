@@ -72,16 +72,24 @@ public:
             switch (bg->GetArenaType())
             {
                 case ARENA_TEAM_2v2:
-                    player->AddItem(sConfigMgr->GetIntDefault("Arena.Reward.ItemID.2v2", 29434), RewardCount);
+                    ArenaRewardItem(player, bgTeamId, winnerTeamId, "2v2", RewardCount);
                     break;
                 case ARENA_TEAM_3v3:
-                    player->AddItem(sConfigMgr->GetIntDefault("Arena.Reward.ItemID.3v3", 29434), RewardCount);
+                    ArenaRewardItem(player, bgTeamId, winnerTeamId, "3v3", RewardCount);
                     break;
                 case ARENA_TEAM_5v5:
-                    player->AddItem(sConfigMgr->GetIntDefault("Arena.Reward.ItemID.5v5", 29434), RewardCount);
+                    ArenaRewardItem(player, bgTeamId, winnerTeamId, "5v5", RewardCount);
                     break;
             }
         }
+    }
+
+    void ArenaRewardItem(Player* player, TeamId bgTeamId, TeamId winnerTeamId, std::string Type, uint32 RewardCount)
+    {
+        if (bgTeamId == winnerTeamId)
+            player->AddItem(sConfigMgr->GetIntDefault("Arena.Reward.Winner.ItemID." + Type, 29434), RewardCount);
+        else
+            player->AddItem(sConfigMgr->GetIntDefault("Arena.Reward.Loser.ItemID." + Type, 29434), RewardCount);
     }
 };
 
