@@ -1,10 +1,9 @@
-# mod-bg-reward
+# ![logo](https://raw.githubusercontent.com/azerothcore/azerothcore.github.io/master/images/logo-github.png) AzerothCore
+## mod-bg-reward
+- Latest build status with azerothcore: [![Build Status](https://github.com/azerothcore/mod-bg-reward/workflows/core-build/badge.svg?branch=master&event=push)](https://github.com/azerothcore/mod-bg-reward)
+
 
 ## Modules based WarheadCore module [mod-bg-reward](https://github.com/WarheadCore/WarheadCore/tree/master/modules/mod-bg-reward)
-
-- Description
-- Configuration
-- How to use
 
 ### Description:
 If you win or lose on the battleground, you get an additional reward
