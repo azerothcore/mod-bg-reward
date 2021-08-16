@@ -62,7 +62,7 @@ public:
             }
         }
 
-        if (sConfigMgr->GetBoolDefault("Arena.Reward.Enable", true) && !bg->isBattleground())
+        if (sConfigMgr->GetBoolDefault("Arena.Reward.Enable", true) && bg->isArena() && bg->isRated())
         {
             if (bgTeamId == winnerTeamId)
                 RewardCount = sConfigMgr->GetIntDefault("Arena.Reward.WinnerTeam.Count", 2);
