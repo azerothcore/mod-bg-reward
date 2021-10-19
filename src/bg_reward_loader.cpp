@@ -15,16 +15,9 @@
  * with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef _BG_REWARD_LOADER_H_
-#define _BG_REWARD_LOADER_H_
-
-// From SC
 void AddSC_BattlegroundsReward();
 
-// Add all
-void AddBGRewardScripts()
+void Addmod_bg_rewardScripts()
 {
-    AddSC_BattlegroundsReward();
+    void AddSC_BattlegroundsReward();
 }
-
-#endif /* _BG_REWARD_LOADER_H_ */
