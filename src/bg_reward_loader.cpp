@@ -19,5 +19,5 @@ void AddSC_BattlegroundsReward();
 
 void Addmod_bg_rewardScripts()
 {
-    void AddSC_BattlegroundsReward();
+    AddSC_BattlegroundsReward();
 }
