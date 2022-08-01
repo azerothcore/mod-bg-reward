@@ -30,44 +30,44 @@ public:
         TeamId bgTeamId = player->GetBgTeamId();
         uint32 RewardCount = 0;
 
-        if (sConfigMgr->GetBoolDefault("Battleground.Reward.Enable", true) && !bg->isArena())
+        if (sConfigMgr->GetOption<bool>("Battleground.Reward.Enable", true) && !bg->isArena())
         {
             if (bgTeamId == winnerTeamId)
-                RewardCount = sConfigMgr->GetIntDefault("Battleground.Reward.WinnerTeam.Count", 2);
+                RewardCount = sConfigMgr->GetOption<int32>("Battleground.Reward.WinnerTeam.Count", 2);
             else
-                RewardCount = sConfigMgr->GetIntDefault("Battleground.Reward.LoserTeam.Count", 1);
+                RewardCount = sConfigMgr->GetOption<int32>("Battleground.Reward.LoserTeam.Count", 1);
 
             switch (player->GetZoneId())
             {
                 case 3277:
-                    player->AddItem(sConfigMgr->GetIntDefault("Battleground.Reward.ItemID.WS", 20558), RewardCount);
+                    player->AddItem(sConfigMgr->GetOption<int32>("Battleground.Reward.ItemID.WS", 20558), RewardCount);
                     break;
                 case 3358:
-                    player->AddItem(sConfigMgr->GetIntDefault("Battleground.Reward.ItemID.AB", 20559), RewardCount);
+                    player->AddItem(sConfigMgr->GetOption<int32>("Battleground.Reward.ItemID.AB", 20559), RewardCount);
                     break;
                 case 3820:
-                    player->AddItem(sConfigMgr->GetIntDefault("Battleground.Reward.ItemID.EY", 29024), RewardCount);
+                    player->AddItem(sConfigMgr->GetOption<int32>("Battleground.Reward.ItemID.EY", 29024), RewardCount);
                     break;
                 case 4710:
-                    player->AddItem(sConfigMgr->GetIntDefault("Battleground.Reward.ItemID.IC", 47395), RewardCount);
+                    player->AddItem(sConfigMgr->GetOption<int32>("Battleground.Reward.ItemID.IC", 47395), RewardCount);
                     break;
                 case 4384:
-                    player->AddItem(sConfigMgr->GetIntDefault("Battleground.Reward.ItemID.SA", 42425), RewardCount);
+                    player->AddItem(sConfigMgr->GetOption<int32>("Battleground.Reward.ItemID.SA", 42425), RewardCount);
                     break;
                 case 2597:
-                    player->AddItem(sConfigMgr->GetIntDefault("Battleground.Reward.ItemID.AV", 20560), RewardCount);
+                    player->AddItem(sConfigMgr->GetOption<int32>("Battleground.Reward.ItemID.AV", 20560), RewardCount);
                     break;
                 default:
                     break;
             }
         }
 
-        if (sConfigMgr->GetBoolDefault("Arena.Reward.Enable", true) && bg->isArena() && bg->isRated())
+        if (sConfigMgr->GetOption<bool>("Arena.Reward.Enable", true) && bg->isArena() && bg->isRated())
         {
             if (bgTeamId == winnerTeamId)
-                RewardCount = sConfigMgr->GetIntDefault("Arena.Reward.WinnerTeam.Count", 2);
+                RewardCount = sConfigMgr->GetOption<int32>("Arena.Reward.WinnerTeam.Count", 2);
             else
-                RewardCount = sConfigMgr->GetIntDefault("Arena.Reward.LoserTeam.Count", 1);
+                RewardCount = sConfigMgr->GetOption<int32>("Arena.Reward.LoserTeam.Count", 1);
 
             switch (bg->GetArenaType())
             {
@@ -87,9 +87,9 @@ public:
     void ArenaRewardItem(Player* player, TeamId bgTeamId, TeamId winnerTeamId, std::string Type, uint32 RewardCount)
     {
         if (bgTeamId == winnerTeamId)
-            player->AddItem(sConfigMgr->GetIntDefault("Arena.Reward.Winner.ItemID." + Type, 29434), RewardCount);
+            player->AddItem(sConfigMgr->GetOption<int32>("Arena.Reward.Winner.ItemID." + Type, 29434), RewardCount);
         else
-            player->AddItem(sConfigMgr->GetIntDefault("Arena.Reward.Loser.ItemID." + Type, 29434), RewardCount);
+            player->AddItem(sConfigMgr->GetOption<int32>("Arena.Reward.Loser.ItemID." + Type, 29434), RewardCount);
     }
 };
 
