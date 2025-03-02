@@ -15,15 +15,17 @@
  * with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "ScriptMgr.h"
-#include "Player.h"
 #include "Battleground.h"
 #include "Configuration/Config.h"
+#include "Player.h"
+#include "ScriptMgr.h"
 
 class BGScript_BattlegroundsReward : public BGScript
 {
 public:
-    BGScript_BattlegroundsReward() : BGScript("BGScript_BattlegroundsReward") {}
+    BGScript_BattlegroundsReward() : BGScript("BGScript_BattlegroundsReward", {
+        ALLBATTLEGROUNDHOOK_ON_BATTLEGROUND_END_REWARD
+    }) {}
 
     void OnBattlegroundEndReward(Battleground* bg, Player* player, TeamId winnerTeamId) override
     {
